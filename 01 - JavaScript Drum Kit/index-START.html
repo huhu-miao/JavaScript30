@@ -70,10 +70,10 @@
         this.classList.remove("playing");
       }
       const keys = document.querySelectorAll(".key"); //select all the keys by class name
+      window.addEventListener("keydown", playSound);
       keys.forEach((key) =>
         key.addEventListener("transitionend", removeTransition)
       );
-      window.addEventListener("keydown", playSound);
     </script>
   </body>
 </html>
